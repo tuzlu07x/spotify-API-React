@@ -8,14 +8,7 @@ import Typography from "@mui/material/Typography";
 import { Container } from "@mui/system";
 import { useState } from "react";
 import { useEffect } from "react";
-
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  ></Box>
-);
-
+import Search from "./Search";
 export default function LoginSpotify() {
   const [clientId, setClientId] = useState("c04ef139f141432c896e76f7c3255f14");
   const [accessToken, setAccessToken] = useState("");
@@ -53,6 +46,8 @@ export default function LoginSpotify() {
 
   return (
     <Container>
+      <Search accessToken={accessToken} setAccessToken={setAccessToken} />        
+
       <Card
         sx={{
           minWidth: 275,
