@@ -14,7 +14,7 @@ const bull = (
 
 export default function BasicCard() {
   return (
-    <Card sx={{ boxShadow:5,background:'linear-gradient(45deg, #006400 30%, #7FFFD4 90%)',color:'white' }}>
+    <Card sx={{ boxShadow:5,background:'linear-gradient(45deg, #8A2BE2 30%, #7FFFD4 90%)',marginTop:2 }}>
       <CardContent>
         <Typography align='center' variant="h4" component="div">
           Spotify API
