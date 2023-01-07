@@ -9,9 +9,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Search from "./Search";
 export default function LoginSpotify() {
-  const [clientId, setClientId] = useState("c04ef139f141432c896e76f7c3255f14");
+  const [clientId, setClientId] = useState("XXXXXXXXXXX"); // Your Client ID
   const [accessToken, setAccessToken] = useState("");
-  const [redirectUri, setRedirectUri] = useState("http://localhost:3000");
+  const [redirectUri, setRedirectUri] = useState("http://localhost:3000"); // Your Redirect URI
   const [authEndpoint, setAuthEndpoint] = useState(
     "https://accounts.spotify.com/authorize"
   );
